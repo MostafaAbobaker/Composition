@@ -1,0 +1,115 @@
+/*Start Main Header*/
+.main-header {
+    padding: 20px; 
+    overflow: hidden;
+    border-bottom: 1px solid $secondColor;
+    position: relative;
+   .logo {
+        width: 30%;
+        float: $float-left;
+       @media #{$maxWidthSmall} {
+            width: 100%;
+           text-align: center;
+        }
+        @media #{$smallWidth} {
+            width: 100%;
+            text-align: center;
+        }
+       @media #{$mediumWidth} {
+            width: 30%;
+            float: $float-left;
+        }
+       
+        h1{
+            margin: 10px 0;
+        }
+        p {
+            margin: 0;
+        }
+    }  
+    .navbar {
+        width: 70%;
+        float: $float-left;
+        background-color: $mainColor;
+        border-radius: 10px;
+        overflow: hidden;
+        display: block;
+      
+        @media #{$smallWidth} {
+            width: 100%;
+            text-align: center;     
+            display: block !important;
+        }
+         @media #{$mediumWidth} {
+            width: 70%;
+            float: $float-left;
+            display: block !important;
+        }
+        @media #{$maxWidthSmall} {
+            position: relative;
+            top: 10px;
+            display: none;
+            width: 100%;
+            float: none;
+        }
+        li{
+            width: 20%;
+            float: $float-left;
+            text-align: center;
+            @media #{$maxWidthSmall} {
+                width: 100%;
+                float: none;
+            }
+            a {
+                text-decoration: none;
+                display: block;
+                padding: 20px 10px;
+                color: #fff;
+                text-transform: uppercase;
+                border-right: 2px solid $secondColor;
+                @include prefix(transition, all .5s ease-in-out, webkit moz o ms );
+                @media #{$maxWidthSmall} {
+                    border-bottom: 2px solid $secondColor;
+                }
+                &:hover {
+                    color: $secondColor;
+                    background-color: #ff8278
+                }
+            }
+        }
+        li:last-of-type a {
+            border:none
+        }
+    }
+    /*.navbar-down {
+        width: 100%;
+        float: auto;
+        display: block;
+        transition: all .7s ease-in-out;
+        li{
+            width: 100%;
+            float: auto;
+            text-align: center;
+            a {
+                text-decoration: none;
+                display: block;
+                padding: 20px 10px;
+                color: #fff;
+                text-transform: uppercase;
+                border-bottom: 2px solid $secondColor;
+                @include prefix(transition, all .5s ease-in-out, webkit moz o ms );
+                &:hover {
+                    color: $secondColor;
+                    background-color: #ff8278
+                }
+            }
+        }
+        li:last-of-type a {
+            border:none
+        }
+    }*/
+    
+}
+/*End Main Header*/
+
+

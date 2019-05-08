@@ -1,0 +1,29 @@
+/*
+    ** Box Sizing Remove Padding any Div Size
+*/
+* {
+    @include prefix(box-sizing, border-box, webkit moz);
+}
+
+/*
+    ** Container Limited for Website Width 1200px and Align Center
+*/
+.container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media #{$smallWidth}{
+        width: 786px
+    }
+    @media #{$mediumWidth}{
+        width: 992px
+    }
+    @media #{$largeWidth}{
+        width: 1170px
+    }
+}
+.text-center-xs {
+    @media #{$maxWidthSmall}{
+        text-align: center;
+    }
+}

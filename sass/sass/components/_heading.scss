@@ -1,0 +1,28 @@
+/*Start Header On First Section*/
+.header-border {
+    position: relative;
+    h2{
+        margin: 40px auto;
+        padding: 15px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: $mainColor;
+        color: #fff;
+        border-radius: 15px;
+        width: 400px;
+        @media #{$maxWidthSmall} {
+            width: auto;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background-color: $secondColor;
+        width: 100%;
+        height: 1.5px;
+        z-index: -1;
+    }
+}
+/*End Header On First Section*/

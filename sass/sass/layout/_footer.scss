@@ -1,0 +1,166 @@
+/*Start Footer*/
+footer {
+    background-color: $secondColor;
+    padding: 40px 0 0;
+    overflow: hidden;
+    h3 {
+        color: #555;
+    }
+    .gallary {
+        
+         @media #{$smallWidth} {
+             float: auto;
+            width: 100%;
+        }
+         @media #{$mediumWidth} {
+             float: $float-left;
+            width: (96% / 3);
+             
+        }
+
+        @media #{$maxWidthSmall} {
+           float: auto;
+            width: 100%;
+            
+        }
+        .gallary-box {
+            margin-bottom: 20px;
+            overflow: hidden;
+            .gallary-image {
+                float: $float-left;
+                width: 30%;
+                background-color: #eee;
+                border: 1px solid #999;
+                border-radius: 5px;
+                padding: 3px;
+                @media #{$maxWidthSmall} {
+                   float: auto;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                }
+                img {
+                   width: 100% 
+                }
+            }
+             .gallary-detal {
+                    float: $float-left;
+                    width: 70%;
+                    padding: 0 15px;
+                 @media #{$maxWidthSmall} {
+                   float: auto;
+                    width: 100%;
+                    padding: 0 ;
+
+                }
+                 h4 {
+                     color: $mainColor;
+                     margin: 0 0 5px  ;
+                 }
+                 p {
+                    color: #656565;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                 }
+            }
+        }
+    }
+    .info {
+        
+        margin-left: 2%;
+        margin-right: 2%;
+         @media #{$smallWidth} {
+             float: $float-left;
+            width: 47%;
+        }
+         @media #{$mediumWidth} {
+             float: $float-left;
+                width: (96% / 3);
+             
+        }
+        @media #{$maxWidthSmall} {
+            float: auto;
+            width: 100%;
+            margin-bottom: 20px;
+
+        }
+        ul {
+            color: #656565;
+            li {
+                margin-bottom: 7px;
+                font-size: 1rem
+            }
+        }
+        h4 {
+           color: #555;
+            margin: 10px 0;
+        }
+        p {
+            margin: 0 0 5px 0;
+            color: #656565;
+            font-size: 1rem
+        }
+    }
+    .contact {
+        float: $float-left;
+        width: (96% / 3);
+        @media #{$smallWidth} {
+             float: $float-left;
+            width: 47%;
+        }
+        @media #{$mediumWidth} {
+             float: $float-left;
+                width: (96% / 3);
+             
+        }
+        @media #{$maxWidthSmall} {
+            float: auto;
+            width: 100%;
+            margin-bottom: 20px;
+
+        }
+        input[type="text"] ,input[type="email"], textarea {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        textarea {
+            height: 100px;
+        }
+    }
+    .copy {
+        border-top: 2px solid #eee;
+        margin-top: 20px;
+        .copy-right {
+            float: $float-left;
+            color: #656565;
+            font-size: 1rem;
+            @media #{$maxWidthSmall} {
+                float: auto;
+                width: 100%;
+                margin: 0;
+
+            }
+        }
+        .desgin-by {
+            
+            float: $float-right;
+            color: #656565;
+            font-size: 1rem;
+            @media #{$maxWidthSmall} {
+                float: auto;
+                width: 100%;
+                margin: 0;
+            }
+            p {
+               @media #{$maxWidthSmall} {
+                    margin: 0;
+                }  
+            }
+        }
+    }
+}
+/*End Footer*/
